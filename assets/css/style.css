@@ -1,3 +1,9 @@
+body{
+    font-family: 'DM Mono', monospace;
+    font-size: 14px;
+    background-image: url("../images/nybg.jpg");
+
+}
 #banner{
     width:100%;
 }
@@ -10,4 +16,27 @@
 .responsive{
     width:100%;
     height:auto;
+}
+
+.form-container{
+    width:100%;
+    margin-top: 20px;
+}
+
+.form-group{
+    padding:10px;
+}
+
+button{
+    margin-top: 20px;
+    padding:10px;
+    margin-left: 10px;
+}
+.article-container{
+   max-width:100%;
+   margin-top:20px;
+
+}
+h5{
+    font-size:14px;
 }
