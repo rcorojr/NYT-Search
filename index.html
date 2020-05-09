@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>NYT Article Search</title>
-    <link rel = "stylesheet" type= "text/css" href = "style.css">
+    <link rel = "stylesheet" type= "text/css" href = "assets/css/style.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+
 </head>
 <body> 
     <script type="text/javascript" src="assets/javascript/app.js"></script>
@@ -16,18 +18,18 @@
         </header>
 
      <div class="form-container">
-        <div class="card" style="width: 960px;">
-            <div class="card-header">
-              Featured
+        <div class="card" style="width:100%;">
+            <div class="card-header bg-dark text-light">
+              <b>SEARCH PARAMETERS</b>
             </div>
         <form>
             <div class="form-group">
-              <label for="exampleFormControlInput1">Search</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              <label for="search">Search Parameters</label>
+              <input type="search" class="form-control" id="article-search" placeholder="Theodore Roosevelt">
             </div>
             <div class="form-group">
-              <label for="exampleFormControlSelect1">Example select</label>
-              <select class="form-control" id="exampleFormControlSelect1">
+              <label for="recordsRetreived">Number of Records to Retrieve</label>
+              <select class="form-control" id="num-records">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -36,13 +38,16 @@
               </select>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlInput1">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <label for="startYear">Start Year (optional)</label>
+                <input type="startYear" class="form-control" id="start-year">
               </div>
               <div class="form-group">
-                <label for="exampleFormControlInput1">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <label for="endYear">End Year (optional)</label>
+                <input type="endYear" class="form-control" id="end-year">
               </div>
+               
+            <button type="search" class="btn btn-dark">Search</button>  
+             <button type="clear" class="btn btn-dark">Clear Results</button>          
           </form>
      </div> 
     </div>  
