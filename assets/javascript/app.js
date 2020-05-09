@@ -6,8 +6,8 @@ $("form").on("submit", function(event){
 
   var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+ searchTerm +"&api-key=zmW5EKTTjmqn8ZaBEF791w7YD1RurxKA";
 
-  fetch(queryURL, {
-    //url: queryURL,
+  $.ajax({
+    url: queryURL,
     method: "GET"
   }).then(function(response){
 
